@@ -5,35 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Raise</title>
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	
+    <script src="bower_components/firebase/firebase.js"></script>
+
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+
+
+	<script src="firebase-config.js"></script>
+	<script src="bower_components/angularfire/dist/angularfire.js"></script>
 	<script src="app.js"></script>
 </head>
 <body>
+	
+<div ng-controller="RecruiterCtrl">
+
 	<h1>Add A Recruiter</h1>
-	<form ng-submit="addrecruiter()">
+	<form ng-submit="addRecruiter()">
 		<input placeholder="name" ng-model="recruiter.name">
-		<input placeholder="industry" ng-model="recruiter.name">
+		<input placeholder="industry" ng-model="recruiter.industry">
 		<button type="submit"> Add! </button>
 	<form>
-   
-    <div class="recruiter" ng-repeat="recruiter in recruiters">
+   <!-- 
+   <h1>All Recruiters</h1>
+    <ul>
+     <li ng-repeat="recruiter in recruiters">
       Name: {{ recruiter.name }} | Industry: {{ recruiter.industry }}
-
-
-
-
-
-
-<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD2VBqm7ylagQF6OLvECAFTUF82cVfF42E",
-    authDomain: "angular-lab-week-10.firebaseapp.com",
-    databaseURL: "https://angular-lab-week-10.firebaseio.com",
-    storageBucket: "angular-lab-week-10.appspot.com",
-  };
-  firebase.initializeApp(config);
-</script>
+	</li>
+    </ul>
+ -->
     
 </body>
 
