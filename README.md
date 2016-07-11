@@ -23,8 +23,10 @@ The objective is to build an app with Angular.
 * Pencil Sketch
 
 ### Tools Set-Up
+
 1. Sublime
 2. Chrome Tools
+
 ---
 
 ### Technologies Used
@@ -37,6 +39,7 @@ The objective is to build an app with Angular.
 
 1. Angular (https://docs.angularjs.org/guide)
 2. Firebase (https://www.firebase.com/docs/)
+
 ---
 
 ### Challenges
@@ -48,9 +51,7 @@ The objective is to build an app with Angular.
 
 Wayne: Great pair partner!
 
-### Wireframe
-
-### Home Page
+### Pencil Sketch of Wireframe
 <p align="center">
   <img src="/images/IMG_2036.JPG" width="350"/>
 </p>
