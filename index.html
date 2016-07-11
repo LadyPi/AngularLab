@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Raise</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css">
+
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/firebase/firebase.js"></script>
@@ -18,26 +22,23 @@
 </head>
 <body ng-app="Raise">
 	
-<div ng-controller="RecruiterCtrl">
+   <div ng-controller="RecruiterCtrl">
+	<h1>Raise</h1>
 
-	<h1>Add A Recruiter</h1>
-	
+	<h2>Add A Recruiter</h2>
+	<div class="addRecruiterForm">
 	<form ng-submit="addRecruiter()">
-		<input placeholder="name" ng-model="recruiter.name">
+		<input class="" placeholder="name" ng-model="recruiter.name">
 		<input placeholder="industry" ng-model="recruiter.industry">
 		<button type="submit"> Add! </button>
 	<form>
-   
-   <h1>All Recruiters</h1>
+   	</div>
+    <h2>All Recruiters</h2>
     <ul>
      <li ng-repeat="recruiter in recruiters">
       <strong>Name:</strong> {{ recruiter.name }} | <strong>Industry:</strong> {{ recruiter.industry }}
-	</li>
+	 </li>
     </ul>
-
- </div>
-    
-</body>
-
-
+   </div> 
+  </body>
 </html>
