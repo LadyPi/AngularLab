@@ -18,9 +18,11 @@ The objective is to build an app with Angular.
 
 2. Proposal
 
-* User Stories
+3. User Stories
 
-* Pencil Sketch
+4. Pencil Sketch
+
+5. Execute
 
 ### Tools Set-Up
 
