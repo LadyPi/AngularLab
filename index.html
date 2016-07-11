@@ -26,13 +26,12 @@
 	<h1>Raise</h1>
 
 	<h2>Add A Recruiter</h2>
-	<div class="addRecruiterForm">
 	<form ng-submit="addRecruiter()">
 		<input class="" placeholder="name" ng-model="recruiter.name">
 		<input placeholder="industry" ng-model="recruiter.industry">
 		<button type="submit"> Add! </button>
 	<form>
-   	</div>
+   
     <h2>All Recruiters</h2>
     <ul>
      <li ng-repeat="recruiter in recruiters">
