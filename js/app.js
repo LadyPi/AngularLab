@@ -1,11 +1,16 @@
 angular
-  .module("Raise", ["firebase"])
-  .controller("RecruiterCtrl", RecruiterCtrl);
+  .module("Raise", ["firebase", "ngRoute"])
+  // .controller("RecruiterCtrl", RecruiterCtrl);
 
-RecruiterCtrl.$inject = ["$scope", "$firebaseArray"];
+  .controller('RecruitersIndexCtrl', function($scope, RecruiterService) {
+  	console.log('index working');
+  	$scope.recruiters = RecruiterService.query();
+  });
+
+RecruitersIndexCtrl.$inject = ["$scope", "$firebaseArray"];
 
 
-function RecruiterCtrl($scope, $firebaseArray) {
+function RecruitersIndexCtrl($scope, $firebaseArray) {
 	var ref = firebase.database().ref().child("recruiters");
 	$scope.recruiters = $firebaseArray(ref);
 	$scope.recruiter = [];
@@ -19,6 +24,25 @@ function RecruiterCtrl($scope, $firebaseArray) {
 	$scope.recruiter = {};
 };
 }
+
+
+  .config(function($routeProvider, $locationProvider) {
+  	$routeProvider
+  	  .when('/', {
+  	  	templateURL: '/templates/recruiters-index.html',
+  	    controller: 'RecruitersIndexCtrl'
+  	  })
+  	  .when('/recruiters/:id', {
+  	  	templateURL: '/templates/recruiters-show.html',
+  	    controller: 'RecruitersShowCtrl'
+  });
+  	  $locationProvider.html5mode ({
+  	  	enabled: true,
+  	  	requireBase: false
+  	  });
+});
+
+
 
 
 
