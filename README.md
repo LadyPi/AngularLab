@@ -18,14 +18,17 @@ The objective is to build an app with Angular.
 
 2. Proposal
 
-* User Stories
+3. User Stories
 
-* Pencil Sketch
+4. Pencil Sketch
+
+5. Execute
 
 ### Tools Set-Up
 
 1. Sublime
 2. Chrome Tools
+3. Trello (https://trello.com/b/c7EDJx9J/angular-lab-week-10)
 
 ---
 
