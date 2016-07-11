@@ -28,6 +28,7 @@ The objective is to build an app with Angular.
 
 1. Sublime
 2. Chrome Tools
+3. Trello (https://trello.com/b/c7EDJx9J/angular-lab-week-10)
 
 ---
 
